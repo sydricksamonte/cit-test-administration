@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataReportExam" targetNamespace="http://tempuri.org/DataReportExam.xsd" xmlns:mstns="http://tempuri.org/DataReportExam.xsd" xmlns="http://tempuri.org/DataReportExam.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="RACHELCONN" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="RACHELCONN (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.RACHELCONN.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="CITConnectionString9" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="CITConnectionString9 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.CITConnectionString9.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="exam_reportTableAdapter" GeneratorDataComponentClassName="exam_reportTableAdapter" Name="exam_report" UserDataComponentName="exam_reportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CITConnectionString9 (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT        exam_report.ins_id, exam_report.exname, exam_report.pname, exam_report.exset, exam_report.extype, exam_report.c0, exam_report.c1, exam_report.c2, 
+                         exam_report.c3, exam_report.c4, exam_report.ans, exam_report.lo, exam_report.co, exam_report.pt, course.course_desc, course.course_sec, 
+                         course.course_id, course.sec_handler, course.term, exam_report.ques_desc
+FROM            exam_report INNER JOIN
+                         course ON exam_report.ins_id = course.sec_handler</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ins_id" DataSetColumn="ins_id" />
+              <Mapping SourceColumn="exname" DataSetColumn="exname" />
+              <Mapping SourceColumn="pname" DataSetColumn="pname" />
+              <Mapping SourceColumn="exset" DataSetColumn="exset" />
+              <Mapping SourceColumn="extype" DataSetColumn="extype" />
+              <Mapping SourceColumn="c0" DataSetColumn="c0" />
+              <Mapping SourceColumn="c1" DataSetColumn="c1" />
+              <Mapping SourceColumn="c2" DataSetColumn="c2" />
+              <Mapping SourceColumn="c3" DataSetColumn="c3" />
+              <Mapping SourceColumn="c4" DataSetColumn="c4" />
+              <Mapping SourceColumn="ans" DataSetColumn="ans" />
+              <Mapping SourceColumn="lo" DataSetColumn="lo" />
+              <Mapping SourceColumn="co" DataSetColumn="co" />
+              <Mapping SourceColumn="pt" DataSetColumn="pt" />
+              <Mapping SourceColumn="course_desc" DataSetColumn="course_desc" />
+              <Mapping SourceColumn="course_sec" DataSetColumn="course_sec" />
+              <Mapping SourceColumn="course_id" DataSetColumn="course_id" />
+              <Mapping SourceColumn="sec_handler" DataSetColumn="sec_handler" />
+              <Mapping SourceColumn="term" DataSetColumn="term" />
+              <Mapping SourceColumn="ques_desc" DataSetColumn="ques_desc" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataReportExam" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataReportExam" msprop:Generator_DataSetName="DataReportExam">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="exam_report" msprop:Generator_UserTableName="exam_report" msprop:Generator_RowDeletedName="exam_reportRowDeleted" msprop:Generator_TableClassName="exam_reportDataTable" msprop:Generator_RowChangedName="exam_reportRowChanged" msprop:Generator_RowClassName="exam_reportRow" msprop:Generator_RowChangingName="exam_reportRowChanging" msprop:Generator_RowEvArgName="exam_reportRowChangeEvent" msprop:Generator_RowEvHandlerName="exam_reportRowChangeEventHandler" msprop:Generator_TablePropName="exam_report" msprop:Generator_TableVarName="tableexam_report" msprop:Generator_RowDeletingName="exam_reportRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ins_id" msprop:Generator_UserColumnName="ins_id" msprop:Generator_ColumnPropNameInRow="ins_id" msprop:Generator_ColumnVarNameInTable="columnins_id" msprop:Generator_ColumnPropNameInTable="ins_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="exname" msprop:Generator_UserColumnName="exname" msprop:Generator_ColumnPropNameInRow="exname" msprop:Generator_ColumnVarNameInTable="columnexname" msprop:Generator_ColumnPropNameInTable="exnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pname" msprop:Generator_UserColumnName="pname" msprop:Generator_ColumnPropNameInRow="pname" msprop:Generator_ColumnVarNameInTable="columnpname" msprop:Generator_ColumnPropNameInTable="pnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="exset" msprop:Generator_UserColumnName="exset" msprop:Generator_ColumnPropNameInRow="exset" msprop:Generator_ColumnVarNameInTable="columnexset" msprop:Generator_ColumnPropNameInTable="exsetColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="extype" msprop:Generator_UserColumnName="extype" msprop:Generator_ColumnPropNameInRow="extype" msprop:Generator_ColumnVarNameInTable="columnextype" msprop:Generator_ColumnPropNameInTable="extypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c0" msprop:Generator_UserColumnName="c0" msprop:Generator_ColumnPropNameInRow="c0" msprop:Generator_ColumnVarNameInTable="columnc0" msprop:Generator_ColumnPropNameInTable="c0Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c1" msprop:Generator_UserColumnName="c1" msprop:Generator_ColumnPropNameInRow="c1" msprop:Generator_ColumnVarNameInTable="columnc1" msprop:Generator_ColumnPropNameInTable="c1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c2" msprop:Generator_UserColumnName="c2" msprop:Generator_ColumnPropNameInRow="c2" msprop:Generator_ColumnVarNameInTable="columnc2" msprop:Generator_ColumnPropNameInTable="c2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c3" msprop:Generator_UserColumnName="c3" msprop:Generator_ColumnPropNameInRow="c3" msprop:Generator_ColumnVarNameInTable="columnc3" msprop:Generator_ColumnPropNameInTable="c3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c4" msprop:Generator_UserColumnName="c4" msprop:Generator_ColumnPropNameInRow="c4" msprop:Generator_ColumnVarNameInTable="columnc4" msprop:Generator_ColumnPropNameInTable="c4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ans" msprop:Generator_UserColumnName="ans" msprop:Generator_ColumnPropNameInRow="ans" msprop:Generator_ColumnVarNameInTable="columnans" msprop:Generator_ColumnPropNameInTable="ansColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lo" msprop:Generator_UserColumnName="lo" msprop:Generator_ColumnPropNameInRow="lo" msprop:Generator_ColumnVarNameInTable="columnlo" msprop:Generator_ColumnPropNameInTable="loColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="co" msprop:Generator_UserColumnName="co" msprop:Generator_ColumnPropNameInRow="co" msprop:Generator_ColumnVarNameInTable="columnco" msprop:Generator_ColumnPropNameInTable="coColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pt" msprop:Generator_UserColumnName="pt" msprop:Generator_ColumnPropNameInRow="pt" msprop:Generator_ColumnVarNameInTable="columnpt" msprop:Generator_ColumnPropNameInTable="ptColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_desc" msprop:Generator_UserColumnName="course_desc" msprop:Generator_ColumnPropNameInRow="course_desc" msprop:Generator_ColumnVarNameInTable="columncourse_desc" msprop:Generator_ColumnPropNameInTable="course_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_sec" msprop:Generator_UserColumnName="course_sec" msprop:Generator_ColumnPropNameInRow="course_sec" msprop:Generator_ColumnVarNameInTable="columncourse_sec" msprop:Generator_ColumnPropNameInTable="course_secColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_id" msprop:Generator_UserColumnName="course_id" msprop:Generator_ColumnPropNameInRow="course_id" msprop:Generator_ColumnVarNameInTable="columncourse_id" msprop:Generator_ColumnPropNameInTable="course_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sec_handler" msprop:Generator_UserColumnName="sec_handler" msprop:Generator_ColumnPropNameInRow="sec_handler" msprop:Generator_ColumnVarNameInTable="columnsec_handler" msprop:Generator_ColumnPropNameInTable="sec_handlerColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="term" msprop:Generator_UserColumnName="term" msprop:Generator_ColumnPropNameInRow="term" msprop:Generator_ColumnVarNameInTable="columnterm" msprop:Generator_ColumnPropNameInTable="termColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ques_desc" msprop:Generator_UserColumnName="ques_desc" msprop:Generator_ColumnPropNameInRow="ques_desc" msprop:Generator_ColumnVarNameInTable="columnques_desc" msprop:Generator_ColumnPropNameInTable="ques_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

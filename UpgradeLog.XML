@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CIT EXAM SYSTEM">
+</Property><Property Name="Solution File" Value="D:\Syd Files\プログラーム\ces\CIT EXAM SYSTEM.sln">
+</Property><Property Name="User Options File" Value="D:\Syd Files\プログラーム\ces\CIT EXAM SYSTEM.suo">
+</Property><Property Name="Date" Value="Lunes, Septyembre 17, 2012">
+</Property><Property Name="Time" Value="9:41 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CIT EXAM SYSTEM.sln" Description="File successfully backed up as C:\Users\admin\Desktop\ces\Backup\CIT EXAM SYSTEM.sln">
+</Event><Event ErrorLevel="0" Project="" Source="CIT EXAM SYSTEM.suo" Description="File successfully backed up as C:\Users\admin\Desktop\ces\Backup\CIT EXAM SYSTEM.suo">
+</Event><Event ErrorLevel="1" Project="ces" Source="..\ces" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="" Source="CIT EXAM SYSTEM.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CIT EXAM SYSTEM.sln" Description="Converted">
+</Event></UpgradeLog>

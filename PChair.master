@@ -1,0 +1,68 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PChair.master.cs" Inherits="Instructor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+ <link rel = "stylesheet" href = "Images/stud.css" type = "text/css" media = "screen" />
+    <title>Welcome!</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <asp:ImageButton ID="ImageButton2s" runat="server" BackColor="Transparent" Enabled="False"
+                Height="279px" ImageAlign="Left" ImageUrl="~/Images/logo_new.png" PostBackUrl="~/InsHome.aspx"
+                Style="left: -230px; position: absolute; top: -69px; z-index: 100;" Width="200px" />
+        </asp:contentplaceholder>
+        &nbsp;
+        <asp:LinkButton ID="LinkButton5" runat="server" Font-Names="Calibri" Font-Size="Medium"
+            Font-Underline="True" ForeColor="Black" PostBackUrl="~/AdHome.aspx" Style="z-index: 101;
+            left: 120px; position: absolute; top: 66px">Home</asp:LinkButton>
+        <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+            Style="font-size: 21px; z-index: 102; left: 126px; position: absolute; top: 34px"
+            Text="Test Administration System" Width="239px"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+            Style="font-size: medium; z-index: 103; left: 364px; color: gray; position: absolute;
+            top: 39px" Text="Malayan Colleges Laguna" Width="239px"></asp:Label>
+        <br />
+        <asp:Panel ID="Panel1" runat="server" align="center" Height="90px" Width="701px">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp;
+            <asp:LinkButton ID="LinkButton6" runat="server" Font-Names="Calibri" Font-Size="Medium"
+                Font-Underline="True" ForeColor="Black" PostBackUrl="~/AdExams.aspx" Style="left: 235px;
+                position: absolute; top: 66px">Tests</asp:LinkButton>
+            &nbsp;
+            <asp:LinkButton ID="LinkButton14" runat="server" Font-Names="Calibri" Font-Size="Medium"
+                Font-Underline="True" ForeColor="Black" PostBackUrl="~/AdTerm.aspx" Style="left: 281px;
+                position: absolute; top: 66px">Term</asp:LinkButton>
+            &nbsp; &nbsp;
+        <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="X-Small" OnClick="LinkButton1_Click"
+            Style="font-size: medium; left: 858px; font-family: Calibri; position: absolute;
+            top: 3px" Width="113px" ForeColor="DimGray">Sign Out</asp:LinkButton>
+            &nbsp;
+            <asp:ImageButton ID="ImageButton3" runat="server" BackColor="Transparent" Enabled="False"
+                Height="279px" ImageAlign="Left" ImageUrl="~/Images/logo_new.png" PostBackUrl="~/InsHome.aspx"
+                Style="left: -230px; position: absolute; top: -69px" Width="200px" />
+            <asp:ImageButton ID="ImageButton7" runat="server" Height="242px" ImageUrl="~/Images/logo power.png"
+                Style="left: -60px; position: absolute; top: -68px" Width="244px" />
+            <asp:LinkButton ID="LinkButton4" runat="server" Font-Names="Calibri" Font-Size="Medium"
+                Font-Underline="True" ForeColor="Black" PostBackUrl="~/AdCourses.aspx" Style="left: 172px;
+                position: absolute; top: 66px" OnClick="LinkButton4_Click">Courses</asp:LinkButton>
+        </asp:Panel>
+        <asp:Label ID="Label9" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Small"
+            ForeColor="Black" Style="z-index: 104; left: 528px; position: absolute; top: 5px;
+            text-align: right" Text="Welcome Sydrick Samonte" Width="342px"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Small"
+            ForeColor="Black" Style="z-index: 106; left: 598px; position: absolute; top: 31px;
+            text-align: right" Text="Welcome Sydrick Samonte" Width="342px"></asp:Label>
+        &nbsp; &nbsp;
+        &nbsp;&nbsp;<br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetClass" targetNamespace="http://tempuri.org/DataSetClass.xsd" xmlns:mstns="http://tempuri.org/DataSetClass.xsd" xmlns="http://tempuri.org/DataSetClass.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="CIT examsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="CIT examsConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.CIT examsConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="classlistTableAdapter" GeneratorDataComponentClassName="classlistTableAdapter" Name="classlist" UserDataComponentName="classlistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CIT examsConnectionString (Web.config)" DbObjectName="dbo.classlist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT        stud_id, prof_id, sec, course_code, stud_name
+FROM            classlist</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stud_id" DataSetColumn="stud_id" />
+              <Mapping SourceColumn="prof_id" DataSetColumn="prof_id" />
+              <Mapping SourceColumn="sec" DataSetColumn="sec" />
+              <Mapping SourceColumn="course_code" DataSetColumn="course_code" />
+              <Mapping SourceColumn="stud_name" DataSetColumn="stud_name" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetClass" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetClass" msprop:Generator_DataSetName="DataSetClass">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="classlist" msprop:Generator_UserTableName="classlist" msprop:Generator_RowDeletedName="classlistRowDeleted" msprop:Generator_RowChangedName="classlistRowChanged" msprop:Generator_RowClassName="classlistRow" msprop:Generator_RowChangingName="classlistRowChanging" msprop:Generator_RowEvArgName="classlistRowChangeEvent" msprop:Generator_RowEvHandlerName="classlistRowChangeEventHandler" msprop:Generator_TableClassName="classlistDataTable" msprop:Generator_TableVarName="tableclasslist" msprop:Generator_RowDeletingName="classlistRowDeleting" msprop:Generator_TablePropName="classlist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stud_id" msprop:Generator_UserColumnName="stud_id" msprop:Generator_ColumnVarNameInTable="columnstud_id" msprop:Generator_ColumnPropNameInRow="stud_id" msprop:Generator_ColumnPropNameInTable="stud_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prof_id" msprop:Generator_UserColumnName="prof_id" msprop:Generator_ColumnVarNameInTable="columnprof_id" msprop:Generator_ColumnPropNameInRow="prof_id" msprop:Generator_ColumnPropNameInTable="prof_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sec" msprop:Generator_UserColumnName="sec" msprop:Generator_ColumnVarNameInTable="columnsec" msprop:Generator_ColumnPropNameInRow="sec" msprop:Generator_ColumnPropNameInTable="secColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="course_code" msprop:Generator_UserColumnName="course_code" msprop:Generator_ColumnVarNameInTable="columncourse_code" msprop:Generator_ColumnPropNameInRow="course_code" msprop:Generator_ColumnPropNameInTable="course_codeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stud_name" msprop:Generator_UserColumnName="stud_name" msprop:Generator_ColumnVarNameInTable="columnstud_name" msprop:Generator_ColumnPropNameInRow="stud_name" msprop:Generator_ColumnPropNameInTable="stud_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

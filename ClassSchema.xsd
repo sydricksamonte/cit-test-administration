@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClassSchema" targetNamespace="http://tempuri.org/ClassSchema.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ClassSchema.xsd" xmlns:mstns="http://tempuri.org/ClassSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="classlist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stud_course_id" type="xs:string" />
+              <xs:element name="stud_id" type="xs:string" minOccurs="0" />
+              <xs:element name="prof_id" type="xs:string" minOccurs="0" />
+              <xs:element name="sec" type="xs:string" minOccurs="0" />
+              <xs:element name="course_code" type="xs:string" minOccurs="0" />
+              <xs:element name="stud_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DocumentKey1">
+      <xs:selector xpath=".//mstns:classlist" />
+      <xs:field xpath="mstns:stud_course_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

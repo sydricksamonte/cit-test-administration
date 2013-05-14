@@ -1,0 +1,45 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="active2.master.cs" Inherits="active" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+   <link rel = "stylesheet" href = "Images/Maintestyle.css" type = "text/css" media = "screen" />
+    <title>Welcome to CIT Examination System</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ImageButton ID="ImageButton7" runat="server" Height="215px" ImageUrl="~/Images/logo power.png"
+            OnClick="ImageButton7_Click" Style="left: -52px; position: absolute; top: -46px; z-index: 100;"
+            Width="218px" />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp;<br />
+            <br />
+            &nbsp; &nbsp; &nbsp;&nbsp;<br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp;</asp:contentplaceholder>
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp;
+        <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
+        &nbsp;
+        &nbsp;&nbsp;
+        <asp:Label ID="Label6" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Small"
+            ForeColor="Black" Style="z-index: 101; left: 593px; position: absolute; top: 25px;
+            text-align: right" Text="Welcome Sydrick Samonte" Width="342px" Visible="False"></asp:Label>
+        &nbsp;&nbsp;&nbsp;<br />
+            <asp:LinkButton ID="LinkButton4" runat="server" Font-Names="Calibri" Font-Size="Medium"
+                Font-Underline="True" ForeColor="Gray" OnClick="out" Style="left: 940px; position: absolute;
+                top: 25px; z-index: 100;" Width="62px" Visible="False">Sign out</asp:LinkButton>
+        &nbsp;<br />
+            </div>
+    </form>
+    
+</body>
+</html>

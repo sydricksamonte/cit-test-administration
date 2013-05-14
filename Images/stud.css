@@ -1,0 +1,19 @@
+body
+{
+background:url(active.png);
+
+background-repeat:no-repeat;
+}
+div
+{
+	background-position:top;
+}
+
+.HeaderStyle, .PagerStyle /*Common Styles*/
+{
+	font-family: Calibri, Sans-Serif;
+    background-image: url(HeaderGlassBlack.gif);
+    background-position:center;
+    background-repeat:repeat-x;
+    background-color:#1d1d1d;
+}

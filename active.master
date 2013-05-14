@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="active.master.cs" Inherits="active" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+   <link rel = "stylesheet" href = "Images/stud.css" type = "text/css" media = "screen" />
+    <title>Welcome to CIT Examination System</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ImageButton ID="ImageButton7" runat="server" Height="215px" ImageUrl="~/Images/logo power.png"
+            OnClick="ImageButton7_Click" Style="left: -48px; position: absolute; top: -54px; z-index: 100;"
+            Width="218px" />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</asp:contentplaceholder>
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
+        <asp:Panel ID="Panel1" runat="server" Height="56px" align="center"  Width="306px" style="left: 60px; position: absolute; top: 67px; z-index: 101;">
+            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <asp:LinkButton ID="LinkButton1" runat="server" Font-Names="Calibri" Font-Size="Large"
+                Font-Underline="True" ForeColor="#404040" PostBackUrl="~/Grades.aspx"
+                Style="left: 124px; position: absolute; top: 31px" OnClick="LinkButton1_Click2">My Grades</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton3" runat="server" Font-Names="Calibri" Font-Size="Large"
+                ForeColor="#404040" OnClick="LinkButton1_Click1" Style="left: 218px; position: absolute;
+                top: 31px">My Tests</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton4" runat="server" Font-Names="Calibri" Font-Size="Medium"
+                Font-Underline="True" ForeColor="Gray" OnClick="out" Style="left: 876px; position: absolute;
+                top: -45px" Width="62px">Sign out</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton2" runat="server" Font-Names="Calibri" Font-Size="Large"
+                ForeColor="#404040" PostBackUrl="~/Home.aspx" Style="left: 62px;
+                position: absolute; top: 31px">Home</asp:LinkButton>
+            <asp:Label ID="Label4" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+                Style="font-size: medium; left: 272px; color: white; position: absolute; top: 565px"
+                Text="2011 © Malayan Colleges Laguna. All rights reserved" Width="352px"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+                Style="font-size: medium; left: -21px; color: gray; position: absolute; top: 588px"
+                Text="." Width="1px"></asp:Label>
+            &nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+                Style="font-size: 21px; left: 60px; position: absolute; top: -25px" Text="Test Administration System" Width="239px"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+                Style="font-size: medium; left: 300px; color: gray; position: absolute; top: -22px"
+                Text="Malayan Colleges Laguna" Width="178px"></asp:Label>
+        </asp:Panel>
+        &nbsp;&nbsp;
+        <asp:Label ID="Label6" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Small"
+            ForeColor="Black" Style="z-index: 104; left: 593px; position: absolute; top: 25px;
+            text-align: right" Text="Welcome Sydrick Samonte" Width="342px"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+            <asp:ImageButton ID="ImageButton1" runat="server" Enabled="False" Height="2px" ImageUrl="~/Images/guhit.png"
+                Style="left: 127px; position: absolute; top: 652px; background-color: transparent; z-index: 103;"
+                Width="726px" />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+    </div>
+    </form>
+    
+</body>
+</html>

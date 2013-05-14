@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Instructor.master.cs" Inherits="Instructor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<link rel = "stylesheet" href = "Images/style.css" type = "text/css" media = "screen" />
+    <title>Welcome!</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-image: none; background-color: transparent">
+         <asp:ImageButton ID="ImageButton7" runat="server" Height="182px" ImageUrl="~/Images/Logo-UV.png"
+            OnClick="ImageButton7_Click" Style="left: -22px; position: absolute; top: -39px; z-index: 100;"
+            Width="183px" />
+        <asp:Label ID="Label2" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+            Style="font-size: 21px; left: 122px; position: absolute; top: 36px; z-index: 101;" Text="Test Administration System"
+            Width="244px" ForeColor="#404040"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Large"
+            Style="font-size: medium; left: 363px; color: white; position: absolute; top: 40px; z-index: 102;"
+            Text="Malayan Colleges Laguna" Width="178px"></asp:Label>
+        <asp:Label ID="Label9" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Small"
+            ForeColor="Silver" Style="z-index: 103; left: 500px; position: absolute; top: 42px;
+            text-align: right" Text="Welcome Sydrick Samonte" Width="342px"></asp:Label>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            &nbsp;
+            <asp:Label ID="Label8" runat="server" Style="display: inline; z-index: 100; left: 523px;
+                visibility: visible; position: absolute; top: 91px" TabIndex="1" Text="Label"></asp:Label>
+        </asp:contentplaceholder>
+        <asp:Panel ID="Panel1" runat="server" align="center" Height="90px" Width="58px">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <asp:ImageButton ID="ImageButton2" runat="server" Height="51px" ImageUrl="~/Images/btn_home1.png"
+                PostBackUrl="~/InsHome.aspx" Style="left: 176px; position: absolute; top: 102px;
+                background-color: transparent; z-index: 100;" Width="140px" OnClick="ImageButton2_Click" />
+            <asp:Label ID="Label4" runat="server" AssociatedControlID="ImageButton2" Font-Bold="False"
+                Font-Names="Calibri" Font-Size="Large" Style="font-size: medium; left: 217px;
+                color: white; position: absolute; top: 112px; text-align: center; z-index: 101;" Text="Home" Width="57px"></asp:Label>
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:ImageButton ID="ImageButton4" runat="server" Height="51px" ImageUrl="~/Images/btn_exams.png"
+                PostBackUrl="~/InsCreateExam.aspx" Style="left: 311px; position: absolute; top: 102px;
+                background-color: transparent; z-index: 102;" Width="140px" />
+            <asp:Label ID="Label5" runat="server" AssociatedControlID="ImageButton4" Font-Bold="False"
+                Font-Names="Calibri" Font-Size="Large" Style="font-size: medium; left: 357px;
+                color: white; position: absolute; top: 112px; text-align: center; z-index: 103;" Text="Tests" Width="42px"></asp:Label>
+            &nbsp;&nbsp;
+            <asp:ImageButton ID="ImageButton5" runat="server" Height="51px" ImageUrl="~/Images/btn_exams.png"
+                Style="left: 445px; position: absolute; top: 102px; background-color: transparent; z-index: 104;"
+                Width="140px" PostBackUrl="~/Classlists.aspx" />
+            <asp:Label ID="Label6" runat="server" AssociatedControlID="ImageButton5" Font-Bold="False"
+                Font-Names="Calibri" Font-Size="Large" Style="font-size: medium; left: 484px;
+                color: white; position: absolute; top: 112px; text-align: center; z-index: 105;" Text="Classlists" Width="57px"></asp:Label>
+            &nbsp;
+            <asp:Label ID="Label11" runat="server" AssociatedControlID="ImageButton6" Font-Bold="False"
+                Font-Names="Calibri" Font-Size="Large" Style="font-size: medium; z-index: 109;
+                left: 754px; color: white; position: absolute; top: 112px; text-align: center"
+                Text="Reports" Width="57px"></asp:Label>
+            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        </asp:Panel>
+        &nbsp;
+        <asp:Label ID="Label12" runat="server" Font-Bold="False" Font-Names="Calibri" Font-Size="Small"
+            ForeColor="Silver" Style="z-index: 105; left: 740px; position: absolute; top: 67px;
+            text-align: right" Text="Welcome Sydrick Samonte" Width="199px"></asp:Label>
+        &nbsp;
+         <asp:ImageButton ID="ImageButton6" runat="server" Height="51px" ImageUrl="~/Images/btn_setting.png"
+                PostBackUrl="~/InsReports.aspx" Style="left: 716px; position: absolute; top: 102px;
+                background-color: transparent; z-index: 106;" Width="140px" OnClick="ImageButton6_Click" />
+        &nbsp; &nbsp;&nbsp;
+        <asp:ImageButton ID="ImageButton3" runat="server" Height="51px" ImageUrl="~/Images/btn_exams.png"
+                PostBackUrl="~/InsFacultyInfo.aspx" Style="left: 580px; position: absolute; top: 102px;
+                background-color: transparent; z-index: 107;" Width="140px" />
+        <asp:Label ID="Label10" runat="server" AssociatedControlID="ImageButton3" Font-Bold="False"
+            Font-Names="Calibri" Font-Size="Large" Style="font-size: medium; z-index: 108;
+            left: 619px; color: white; position: absolute; top: 112px; text-align: center"
+            Text="Courses" Width="42px"></asp:Label>
+        &nbsp; &nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton6" runat="server" Font-Size="X-Small" ForeColor="Silver"
+                PostBackUrl="~/InsSettings.aspx" Style="font-size: small; z-index: 117; left: 847px; font-family: Calibri; position: absolute; top: 42px; text-align: right"
+                Width="97px" OnClick="LinkButton6_Click">Change Password</asp:LinkButton>
+        <br />
+        &nbsp;
+        <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="X-Small" OnClick="LinkButton1_Click"
+            Style="font-size: medium; left: 882px; color: white; font-family: Calibri; position: absolute;
+            top: 11px; z-index: 109;" Width="77px" ForeColor="Silver">Sign Out</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton5" runat="server" Font-Size="Small" ForeColor="White"
+            PostBackUrl="~/Help.aspx" Style="z-index: 117; left: 844px; font-family: Calibri; position: absolute; top: 13px; text-align: right"
+            Width="32px" Visible="False">Help</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="X-Small" ForeColor="Silver"
+            OnClick="LinkButton2_Click" Style="left: 970px; font-family: Calibri; position: absolute;
+            top: 3px; z-index: 111;" Width="16px" Visible="False">EN</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton3" runat="server" Font-Size="X-Small" ForeColor="Silver"
+            OnClick="LinkButton3_Click" Style="left: 996px; font-family: Calibri; position: absolute;
+            top: 3px; z-index: 112;" Width="16px" Visible="False">語</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" Font-Size="X-Small" ForeColor="Silver"
+            OnClick="LinkButton4_Click" Style="left: 984px; font-family: Calibri; position: absolute;
+            top: 3px; z-index: 113;" Width="1px" Visible="False">ES</asp:LinkButton>
+        &nbsp;&nbsp;<br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:ImageButton ID="ImageButton1" runat="server" Enabled="False" Height="2px" ImageUrl="~/Images/guhit.png"
+            Style="left: 145px; position: absolute; top: 1082px; background-color: transparent; z-index: 114;"
+            Width="726px" />
+        <asp:Label ID="Label1" runat="server" Style="font-size: medium; left: 325px; color: #ffffff;
+            font-family: Calibri; position: absolute; top: 1106px; z-index: 115;" Text="All Rights Reserved. © 2011 Malayan Colleges Laguna"></asp:Label>
+        &nbsp; &nbsp; &nbsp;
+        <asp:LinkButton ID="LinkButton8" runat="server" Font-Size="Small" ForeColor="Transparent"
+            Style="font-size: medium; left: 5px; color: buttonhighlight; font-family: 'Lucida Sans';
+            position: absolute; top: 1147px; z-index: 116;">    .</asp:LinkButton>
+    </div>
+    </form>
+</body>
+</html>

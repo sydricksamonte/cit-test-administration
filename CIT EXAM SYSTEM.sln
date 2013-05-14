@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ces", ".", "{00250DA2-B1C5-48F7-816D-CDE8A3555B4C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/CIT EXAM SYSTEM"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\CIT EXAM SYSTEM\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CIT EXAM SYSTEM\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CIT EXAM SYSTEM"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\CIT EXAM SYSTEM\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CIT EXAM SYSTEM\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51445"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00250DA2-B1C5-48F7-816D-CDE8A3555B4C}.Debug|.NET.ActiveCfg = Debug|.NET
+		{00250DA2-B1C5-48F7-816D-CDE8A3555B4C}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

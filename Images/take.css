@@ -1,0 +1,28 @@
+body
+{
+background:url(take.png);
+
+background-repeat:no-repeat;
+}
+div
+{
+	background-position:top;
+}
+
+.GridViewStyle
+{
+    font-family: Calibri, Sans-Serif;
+    font-size:small;
+    table-layout: auto;
+    border-collapse: collapse;
+    border: #1d1d1d 5px solid;
+}
+/*Header and Pager styles*/
+.HeaderStyle, .PagerStyle /*Common Styles*/
+{
+	font-family: Calibri, Sans-Serif;
+    background-image: url(HeaderGlassBlack.gif);
+    background-position:center;
+    background-repeat:repeat-x;
+    background-color:#1d1d1d;
+}
